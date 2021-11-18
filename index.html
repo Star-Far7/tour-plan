@@ -13,9 +13,12 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
     <header class="navbar">
       <div class="container">
+        <!-- Верхнее меню навигации -->
         <div class="navbar-top">
+          <!-- Логотип -->
           <a href="#" class="logo">
             <img
               src="img/horizontal-logo.svg"
@@ -24,6 +27,7 @@
             />
           </a>
 
+          <!-- Строка поиска -->
           <form action="#" class="search navbar__search">
             <input
               type="text"
@@ -35,7 +39,8 @@
             </button>
           </form>
 
-          <a href="#" class="user">
+          <!-- Ссылка на Натана -->
+          <a href="#" class="user navbar__user">
             <img
               src="img/user-avatar.jpeg"
               alt="Avatar: Nathan"
@@ -43,11 +48,19 @@
             />
             <span class="user__name">Nathan</span>
           </a>
+
+          <!-- Модальная кнопка -->
+          <button class="menu-button navbar-top__menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
         </div>
         <!-- /.navbar-top -->
       </div>
       <!-- /.container -->
 
+      <!-- Нижнее меню навигации -->
       <div class="navbar-battom">
         <div class="container">
           <nav class="navbar-menu">
@@ -65,5 +78,6 @@
       </div>
       <!-- /.navbar-battom -->
     </navbar>
+    
   </body>
 </html>

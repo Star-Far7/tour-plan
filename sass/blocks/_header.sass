@@ -1,13 +1,18 @@
 .navbar
   background-color: #fff
+  // Верхнее меню
   &-top
     display: flex
     align-items: center
     justify-content: space-between
     padding: 40px 0
+    // Модальная кнопка
+    &__menu-button
+      display: none
   &__search
     margin-right: auto
     margin-left: 108px
+  // Нижнее меню
   &-battom
     background-color: $dark
   &-menu
@@ -22,9 +27,11 @@
       line-height: 18px
       text-transform: uppercase
 
+// Логотип
 .logo
   width: 177px
 
+// Строка поиска
 .search
   display: flex
   position: relative
@@ -51,6 +58,7 @@
     background: $primary
     cursor: pointer
 
+// Ссылка на Натана
 .user
   display: flex
   align-items: center

@@ -1,23 +1,65 @@
+// Адаптив до 1200px
 @media (max-width: 1200px)
   .container
     max-width: 960px
 
+// Адаптив до 992px
 @media (max-width: 992px)
   .container
     max-width: 700px
+
+  // Логотип
+  .logo
+    width: 132px
+
+  // Верхнее меню
   .navbar
     &-top
       padding: 30px 0
     &__search
       margin-left: auto
-      max-width: 340px
     &-menu
       padding: 22px 0
       &__link
         font-size: 12px
         font-height: 15px
 
+  // Строка поиска
+  .search
+    &__input
+      width: 340px
+
+// Адаптив до 768px
 @media (max-width:768px)
   .container
     max-width: 576px
     width: 92%
+
+  // Нижнее меню
+  .navbar
+    &__search, &-menu, &__user
+      display: none
+
+  // Модальнаяа кнопка
+  .menu
+    &-button
+      display: flex
+      width: 16px
+      height: 11px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+
+// Адаптив до 576px
+@media (max-width: 576px)
+  // Логотип
+  .logo
+    max-width: 99px
