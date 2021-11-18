@@ -479,7 +479,7 @@ template {
 
 @media (max-width: 992px) {
   .container {
-    max-width: 768px;
+    max-width: 700px;
   }
   .logo {
     width: 132px;
@@ -496,6 +496,9 @@ template {
   .navbar-menu__link {
     font-size: 12px;
     font-height: 15px;
+  }
+  .navbar-battom__container {
+    max-width: 673px;
   }
   .search__input {
     width: 340px;
