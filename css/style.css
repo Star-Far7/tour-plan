@@ -681,7 +681,7 @@ template {
             justify-content: space-between;
   }
   .hotel-info__text {
-    width: 100%;
+    width: 95%;
   }
   .hotel-info__name {
     margin-top: 10px;
