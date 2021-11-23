@@ -28,6 +28,7 @@
   &-description
     font-size: 12px
     line-height: 15px
+  // Блок слайдера и блок бронирования и гео карты
   &-grid
     display: flex
     justify-content: space-between
@@ -70,6 +71,7 @@
   width: 728px
   height: 450px
   margin: 0
+  // Слайды
   &-slide
     width: 100%
     height: 100%
@@ -87,6 +89,7 @@
       left: 0
       background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
       border-radius: 8px
+  // Книпки переключения слайда
   &-button
     position: absolute
     top: 50%
@@ -107,6 +110,7 @@
       left: 18px
       background-image: url(../img/arrow-prev.svg)
 
+// Блок бронирования
 .booking
   background-color: $dark
   color: $light
@@ -114,6 +118,7 @@
   width: 350px
   min-height: 210px
   padding: 28px
+  // Информация о бронировании
   &__info
     display: flex
     justify-content: space-between
@@ -153,6 +158,7 @@
     line-height: 16px
   &__description
     margin-left: 9px
+  // Колл центр
   &__call-center
     display: flex
     align-items: center
@@ -176,6 +182,7 @@
     line-height: 25px
   &__num
     margin-left: 8px
+  // Кнопка больше
   &__button
     width: 100%
     min-height: 45px
@@ -189,9 +196,10 @@
     background-color: $primary
     color: $light
     cursor: pointer
+
+// Гео карта
 .map
   width: 347px
   height: 213px
-  background-color: #000
   border-radius: 10px
   overflow: hidden

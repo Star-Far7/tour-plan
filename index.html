@@ -7,11 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=b7708a62-98f4-48d3-90b9-93b8731ef3ae API-&lang=ru_RU"
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <header class="navbar">
@@ -129,12 +133,13 @@
         </div>
         <!-- /.hotel-info -->
 
+        <!-- Блок слайдера и блок бронирования и гео карты -->
         <div class="hotel-grid">
-          <!-- Slider main container -->
+          <!-- Слайдер -->
           <div class="swiper hotel__slider">
-            <!-- Additional required wrapper -->
+            <!-- Дополнительная необходимая обертка  -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
+              <!-- Слайды -->
               <div class="swiper-slide">
                 <img
                   class="swiper-slide__image"
@@ -158,7 +163,7 @@
               </div>
             </div>
 
-            <!-- If we need navigation buttons -->
+            <!-- Кнопки перелистывания слайдав -->
             <button class="swiper-button swiper-button--prev"></button>
             <button class="swiper-button swiper-button--next"></button>
           </div>
@@ -166,8 +171,9 @@
           <div class="hotel-right">
             <!-- Блок бронирования -->
             <div class="booking">
-              <!-- Информация об бронировании  -->
+              <!-- Информация о бронировании  -->
               <div class="booking__info">
+                <!-- блок со стоимостью -->
                 <div class="booking__price">
                   <span class="booking__start">price starts as</span>
                   <strong class="booking__pricetag">$ 8,500</strong>
@@ -175,6 +181,7 @@
                 </div>
                 <!-- /.booking__price -->
 
+                <!-- Блок с колличеством мест  -->
                 <div class="booking__room">
                   <div class="booking__text">
                     <img
@@ -208,13 +215,15 @@
               </div>
               <!-- /.booking__call-center -->
 
+              <!-- Кнопка больше -->
               <button class="bautton booking__button">
                 View Other Options
               </button>
             </div>
             <!-- /.booking -->
 
-            <div class="map"></div>
+            <!-- Гео карта -->
+            <div class="map" id="map"></div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->
