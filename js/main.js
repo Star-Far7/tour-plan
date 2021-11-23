@@ -9,6 +9,8 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button--prev",
   },
 
+  effect: "coverflow",
+
   // Прелистывания слайдера с помощью стрелок влево и вправо
   keyboard: {
     enabled: true,
