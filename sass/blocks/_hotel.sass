@@ -28,6 +28,13 @@
   &-description
     font-size: 12px
     line-height: 15px
+  &-grid
+    display: flex
+    justify-content: space-between
+  &-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 .stars
   flex-basis: 100%
 .offer
@@ -61,11 +68,13 @@
 // Блок слайдера
 .swiper
   width: 728px
+  margin: 0
   &-slide
-    width: 100%px
+    width: 100%
     height: 450px
     position: relative
-    border-radius: 8px
+    &::before
+      border-radius: 8px
     &::after
       content: ''
       position: absolute
@@ -76,7 +85,7 @@
       right: 0
       left: 0
       background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-      z-index: 10
+      border-radius: 8px
   &-button
     position: absolute
     top: 50%
@@ -96,3 +105,90 @@
     &--prev
       left: 18px
       background-image: url(../img/arrow-prev.svg)
+
+.booking
+  background-color: $dark
+  color: $light
+  border-radius: 8px
+  width: 350px
+  min-height: 210px
+  padding: 28px
+  &__info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 9px
+  &__price
+    display: flex
+    flex-direction: column
+  &__start
+    font-family: Nunito
+    font-style: normal
+    font-weight: normal
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    font-family: Nunito
+    font-style: normal
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-family: Nunito
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__room
+    margin-top: 4px
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 8px
+    font-family: Nunito
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__description
+    margin-left: 9px
+  &__call-center
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 17px
+  &__heading
+    font-family: Nunito
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__number
+    display: flex
+    align-items: center
+    text-decoration: none
+    color: inherit
+    font-family: Nunito
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__num
+    margin-left: 8px
+  &__button
+    width: 100%
+    min-height: 45px
+    font-family: Nunito
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    border: none
+    border-radius: 4px
+    background-color: $primary
+    color: $light
+    cursor: pointer
+.map
+  width: 347px
+  height: 213px
+  background-color: #000

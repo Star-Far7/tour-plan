@@ -8,14 +8,10 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button--next",
     prevEl: ".swiper-button--prev",
   },
-});
 
-// Функция перелистывания слайдера с помощью стрелок влево и вправо
-window.addEventListener("keydown", (e) => {
-  if (e.key === "ArrowRight") {
-    document.querySelector(".swiper-button--next").click();
-  }
-  if (e.key === "ArrowLeft") {
-    document.querySelector(".swiper-button--prev").click();
-  }
+  // Прелистывания слайдера с помощью стрелок влево и вправо
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 });
