@@ -983,4 +983,14 @@ template {
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 480px) {
+  .swiper {
+    height: 179px;
+  }
+  .swiper-button {
+    width: 12px;
+    height: 12px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

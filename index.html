@@ -12,7 +12,6 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=b7708a62-98f4-48d3-90b9-93b8731ef3aeAPI-&lang=ru_RU"></script>
   </head>
   <body>
     <header class="navbar">
@@ -182,7 +181,7 @@
                 <div class="booking__room">
                   <div class="booking__text">
                     <img
-                      src="/img/user.svg"
+                      src="img/user.svg"
                       alt="Icon: user"
                       class="booking__icon"
                     />
@@ -191,7 +190,7 @@
 
                   <div class="booking__text">
                     <img
-                      src="/img/home.svg"
+                      src="img/home.svg"
                       alt="Icon: user"
                       class="booking__icon"
                     />
@@ -206,7 +205,7 @@
               <div class="booking__call-center">
                 <span class="booking__heading">Quick Booking</span>
                 <a href="tel:12100" class="booking__number">
-                  <img src="/img/phone-call.svg" alt="Icon: phone" />
+                  <img src="img/phone-call.svg" alt="Icon: phone" />
                   <span class="booking__num">12100</span></a
                 >
               </div>
@@ -220,7 +219,16 @@
             <!-- /.booking -->
 
             <!-- Гео карта -->
-            <div class="map" id="map"></div>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.1489232284355!2d-81.09642582405878!3d32.08182463043553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fb9e673178c8cf%3A0x5a3b052ba093a084!2sDoubleTree%20by%20Hilton%20Hotel%20Savannah%20Historic%20District!5e0!3m2!1sru!2skz!4v1637685486562!5m2!1sru!2skz"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->
