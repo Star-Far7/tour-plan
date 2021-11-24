@@ -1,12 +1,12 @@
 // Слайдер
-const swiper = new Swiper(".swiper", {
+const hotelSlider = new Swiper(".hotel-slider", {
   // Optional parameters
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button--next",
-    prevEl: ".swiper-button--prev",
+    nextEl: ".hotel-slider__button--next",
+    prevEl: ".hotel-slider__button--prev",
   },
 
   // Эффект перелистывания слайда
@@ -16,5 +16,16 @@ const swiper = new Swiper(".swiper", {
   keyboard: {
     enabled: true,
     onlyInViewport: false,
+  },
+});
+// Слайдер
+const reviewsSlider = new Swiper(".reviews-slider", {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
   },
 });
