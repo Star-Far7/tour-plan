@@ -4,10 +4,9 @@
     max-width: 960px
 
   // Слайдер
-  .swiper
-    width: 590px
-  .swiper
-    &-slide
+  .hotel
+    &-slider
+      width: 590px
       &__image
         object-fit: cover
         width: 100%
@@ -52,8 +51,8 @@
       margin-bottom: 30px
     &-right
       flex-direction: row
-  .swiper
-    width: 100%
+    &-slider
+      width: 100%
   // Блок бронирования
   .booking
     width: 340px
@@ -66,6 +65,15 @@
     padding: 92px 0 92px 0
     &-wrapper
       max-width: 700px
+
+  .reviews
+    &__title
+      font-size: 30px
+      line-height: 38px
+    &-slider
+      &__item
+        max-width: 580px
+        padding: 0 62px 30px
 
 // Адаптив до 768px
 @media (max-width:768px)
@@ -119,12 +127,13 @@
 
   // Блок слайдера и блок бронирования и гео карты
   .hotel
+    // Слайдер
+    &-slider
+      height: 350px
     &-right
       flex-direction: column
       min-height: 450px
-  // Слайдер
-  .swiper
-    height: 350px
+
   // Блок бронирования
   .booking
     width: 100%
@@ -149,22 +158,42 @@
     .subscribe
       width: 100%
 
+  .reviews
+    &__title
+      font-size: 18px
+      line-height: 23px
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &:after, &:before
+          display: none
+      &__button
+        top: 45px
+        &--prev
+          left: 50%
+          transform: translate(-50%, -50%)
+          margin-left: -75px
+        &--next
+          right: 50%
+          transform: translate(50%, -50%)
+          margin-right: -75px
+
 // Адаптив до 576px
 @media (max-width: 576px)
   // Логотип
   .logo
     max-width: 99px
   // Слайдер
-  .swiper
-    height: 270px
   .hotel
     &__slider
       margin-bottom: 20px
+      height: 270px
 
 // Адаптив до 480px
 @media (max-width: 480px)
-  .swiper
-    height: 179px
-    &-button
-      width: 12px
-      height: 12px
+  .hotel
+    &-slider
+      height: 179px
+      &__button
+        width: 12px
+        height: 12px

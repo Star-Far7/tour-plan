@@ -909,6 +909,7 @@ template {
 }
 
 .reviews__title {
+  margin: 0 0 70px 0;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -929,7 +930,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 730px;
+  max-width: 730px;
   margin: 45px auto 0;
   padding: 0 97px 30px;
   background-color: #fff;
@@ -1045,10 +1046,10 @@ template {
   .container {
     max-width: 960px;
   }
-  .swiper {
+  .hotel-slider {
     width: 590px;
   }
-  .swiper-slide__image {
+  .hotel-slider__image {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
@@ -1097,7 +1098,7 @@ template {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .swiper {
+  .hotel-slider {
     width: 100%;
   }
   .booking {
@@ -1111,6 +1112,14 @@ template {
   }
   .newslatter-wrapper {
     max-width: 700px;
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
+    padding: 0 62px 30px;
   }
 }
 
@@ -1180,15 +1189,15 @@ template {
     -ms-flex-preferred-size: content;
         flex-basis: content;
   }
+  .hotel-slider {
+    height: 350px;
+  }
   .hotel-right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     min-height: 450px;
-  }
-  .swiper {
-    height: 350px;
   }
   .booking {
     width: 100%;
@@ -1222,25 +1231,48 @@ template {
   .newslatter .subscribe {
     width: 100%;
   }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item:after, .reviews-slider__item:before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 45px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin-left: -75px;
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    margin-right: -75px;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     max-width: 99px;
   }
-  .swiper {
-    height: 270px;
-  }
   .hotel__slider {
     margin-bottom: 20px;
+    height: 270px;
   }
 }
 
 @media (max-width: 480px) {
-  .swiper {
+  .hotel-slider {
     height: 179px;
   }
-  .swiper-button {
+  .hotel-slider__button {
     width: 12px;
     height: 12px;
   }
