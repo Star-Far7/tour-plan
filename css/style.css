@@ -851,6 +851,7 @@ template {
 }
 
 .newslatter-title {
+  margin: 0;
   color: #ffffff;
   font-style: normal;
   font-weight: 300;
@@ -898,6 +899,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1038,6 +1040,94 @@ template {
   text-align: justify;
 }
 
+.activities {
+  padding: 60px 0 98px 0;
+}
+
+.activities__title {
+  margin-bottom: 57px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 24px 26px;
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+
+.card__image {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+.card__title {
+  margin-top: auto;
+  margin-bottom: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.card__button {
+  padding: 7px 22px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1050,6 +1140,10 @@ template {
        object-fit: cover;
     width: 100%;
     height: 100%;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 
@@ -1116,6 +1210,20 @@ template {
   .reviews-slider__item {
     max-width: 580px;
     padding: 0 62px 30px;
+  }
+  .activities {
+    padding-bottom: 70px;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 340px;
+    height: 255px;
   }
 }
 
@@ -1255,6 +1363,10 @@ template {
             transform: translate(50%, -50%);
     margin-right: -75px;
   }
+  .card {
+    width: 49%;
+    height: 255px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1267,6 +1379,16 @@ template {
   }
   .reviews {
     padding-bottom: 50px;
+  }
+  .reviews-slider__text {
+    text-align: left;
+  }
+  .activities__title {
+    font-size: 18px;
+  }
+  .card {
+    width: 100%;
+    height: 255px;
   }
 }
 
