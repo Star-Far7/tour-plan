@@ -821,10 +821,6 @@ template {
 .newslatter {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newslatter-bg.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .newslatter::before {
@@ -1231,6 +1227,9 @@ template {
   .newslatter .subscribe {
     width: 100%;
   }
+  .reviews {
+    padding-bottom: 60px;
+  }
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
@@ -1265,6 +1264,9 @@ template {
   .hotel__slider {
     margin-bottom: 20px;
     height: 270px;
+  }
+  .reviews {
+    padding-bottom: 50px;
   }
 }
 

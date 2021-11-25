@@ -29,3 +29,9 @@ const reviewsSlider = new Swiper(".reviews-slider", {
     prevEl: ".reviews-slider__button--prev",
   },
 });
+
+// Эффект паралакса
+$(".newslatter").parallax({
+  imageSrc: "img/newslatter-bg.jpeg",
+  speed: 0.4,
+});
