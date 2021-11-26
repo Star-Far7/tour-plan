@@ -64,6 +64,14 @@
   .map
     width: 340px
 
+  // Секция с пакетами
+  .packages
+    &__title
+      font-size: 30px
+      line-height: 38px
+    &-wrapper
+      grid-template-columns: repeat(2,minmax(min-content, 350px))
+
   // Секция с подпиской
   .newslatter
     padding: 92px 0 92px 0
@@ -157,6 +165,35 @@
   .map
     width: 100%
 
+  // Секция с пакетами
+  .packages
+    &-wrapper
+      grid-template-columns: minmax(min-content, 1fr)
+  .packet
+    &:first-child
+      grid-column: span 1
+    &__info
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    &__order
+      flex-direction: column
+    &__button
+      margin-top: 7px
+      width: 100%
+      flex: 16
+  .other
+    &-packet
+      &__info
+        padding: 30px 21px 30px 21px
+        justify-content: space-between
+      &__image
+        width: 50%
+        height: 100%
+      &__description
+        margin: 14px 0 16px 0
+        font-size: 12px
+
   // Секция с подпиской
   .newslatter
     padding: 76px 0 83px 0
@@ -212,6 +249,21 @@
       margin-bottom: 20px
       height: 270px
 
+  // Секция с пакетами
+  .packages
+    &__title
+      font-size: 18px
+      line-height: 23px
+  .info-none
+    display: none
+  .other
+    &-packet
+      height: 300px
+      &__rating
+        display: none
+      &__description
+        display: none
+
   // Секция с отзывами
   .reviews
     padding-bottom: 50px
@@ -231,7 +283,16 @@
 @media (max-width: 480px)
   .hotel
     &-slider
-      height: 179px
+      height: 200px
       &__button
         width: 12px
         height: 12px
+
+  // Секция с пакетами
+  .packet
+    &__info
+      display: none
+  .other
+    &-packet
+      &__image
+        width: 100%
