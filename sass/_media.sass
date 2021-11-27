@@ -179,7 +179,7 @@
       left: 0
       right: 0
       bottom: 0
-      background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%)
+      background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #00479e 99.85%)
       z-index: -1
     &:first-child
       grid-column: span 1
@@ -201,16 +201,15 @@
       flex-direction: column
       justify-content: space-between
     &__price
-      flex-direction: column
-      align-items: start
+      justify-content: flex-start
+      align-items: center
     &__button
-      margin-top: 7px
       padding-top: 10px
       padding-bottom: 10px
-      width: 100%
-      flex: 16
   .other
     &-packet
+      &__rating
+        display: none
       &__info
         justify-content: flex-end
         padding: 30px 21px 30px 21px

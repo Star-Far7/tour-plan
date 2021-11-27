@@ -941,9 +941,6 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .packet__discount {
@@ -965,8 +962,7 @@ template {
 }
 
 .packet__button {
-  padding: 0 25px;
-  height: 40px;
+  padding: 10px 25px;
   border: none;
   border-radius: 4px;
   font-family: Nunito;
@@ -1540,7 +1536,7 @@ template {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+    background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #00479e 99.85%);
     z-index: -1;
   }
   .packet:first-child {
@@ -1575,22 +1571,19 @@ template {
             justify-content: space-between;
   }
   .packet__price {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .packet__button {
-    margin-top: 7px;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 100%;
-    -webkit-box-flex: 16;
-        -ms-flex: 16;
-            flex: 16;
+  }
+  .other-packet__rating {
+    display: none;
   }
   .other-packet__info {
     -webkit-box-pack: end;
