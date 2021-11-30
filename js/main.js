@@ -18,6 +18,7 @@ const hotelSlider = new Swiper(".hotel-slider", {
     onlyInViewport: false,
   },
 });
+
 // Слайдер
 const reviewsSlider = new Swiper(".reviews-slider", {
   // Optional parameters
@@ -35,3 +36,12 @@ $(".newslatter").parallax({
   imageSrc: "img/newslatter-bg.jpeg",
   speed: 0.4,
 });
+
+// Модальнаяа кнопка
+const menuButton = document.querySelector(".menu-button");
+// Функция вызова меню
+menuButton.addEventListener("click", () =>
+  document
+    .querySelector(".navbar-battom")
+    .classList.toggle("navbar-battom--visible")
+);

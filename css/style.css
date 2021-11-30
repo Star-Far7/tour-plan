@@ -472,6 +472,10 @@ template {
   color: #333333;
 }
 
+.navbar__search--mobile--visible, .navbar__user--mobile--visible {
+  display: none;
+}
+
 .breadcrumb-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1614,7 +1618,7 @@ template {
   }
   .navbar-menu__link {
     font-size: 12px;
-    font-height: 15px;
+    line-height: 15px;
   }
   .navbar-battom__container {
     max-width: 673px;
@@ -1740,8 +1744,66 @@ template {
     max-width: 576px;
     width: 86%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 78px;
+  }
+  .navbar-menu {
+    padding: 0;
+  }
+  .navbar--mobile-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__search--mobile--hidden, .navbar__user--mobile--hidden {
     display: none;
+  }
+  .navbar__search--mobile--visible, .navbar__user--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__search {
+    margin: 27px 0 39px 0;
+  }
+  .navbar-battom {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 78px;
+    padding-top: 30px;
+  }
+  .navbar-battom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-menu__link {
+    margin-bottom: 20px;
+  }
+  .navbar .user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar .user__name--light {
+    margin: 10px 0 0 0;
+    color: #ffffff;
   }
   .menu-button {
     display: -webkit-box;
@@ -2104,6 +2166,9 @@ template {
 }
 
 @media (max-width: 480px) {
+  .navbar__search {
+    width: 243px;
+  }
   .hotel-slider {
     height: 200px;
   }

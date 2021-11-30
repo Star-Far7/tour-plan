@@ -38,7 +38,7 @@
       padding: 22px 0
       &__link
         font-size: 12px
-        font-height: 15px
+        line-height: 15px
 
     &-battom
       &__container
@@ -131,18 +131,67 @@
         grid-column: span 4
     &__input
       flex-basis: 49%
+
 // Адаптив до 768px
 @media (max-width:768px)
   .container
     max-width: 576px
     width: 86%
+  body
+    padding-top: 78px
 
   // Нижнее меню
   .navbar
-    &__search, &-menu, &__user
-      display: none
+    &-menu
+      padding: 0
 
-  // Модальнаяа кнопка
+    &--mobile
+      &-fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+
+    &__search, &__user
+      &--mobile
+        &--hidden
+          display: none
+
+    &__search, &__user
+      &--mobile
+        &--visible
+          display: flex
+
+    &__search
+      margin: 27px 0 39px 0
+
+    &-battom
+      display: none
+      position: fixed
+      right: 0
+      left: 0
+      bottom: 0
+      top: 78px
+      padding-top: 30px
+      &--visible
+        display: block
+
+    &-menu
+      flex-direction: column
+      align-items: center
+      &__link
+        margin-bottom: 20px
+
+    .user
+      flex-direction: column
+      justify-content: center
+      &__name
+        &--light
+          margin: 10px 0 0 0
+          color: $light
+
+  // Модальная кнопка
   .menu
     &-button
       display: flex
@@ -402,6 +451,9 @@
 
 // Адаптив до 480px
 @media (max-width: 480px)
+  .navbar
+    &__search
+      width: 243px
   .hotel
     &-slider
       height: 200px
