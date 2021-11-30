@@ -1776,6 +1776,7 @@ template {
     bottom: 0;
     top: 78px;
     padding-top: 30px;
+    overflow-y: auto;
   }
   .navbar-battom--visible {
     display: block;
