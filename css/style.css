@@ -1627,6 +1627,8 @@ template {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   max-width: 478px;
+  height: 95%;
+  max-height: 520px;
   padding: 33px 88px;
   background-color: #0A223D;
   color: #ffffff;
@@ -1637,7 +1639,6 @@ template {
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
   overflow-y: auto;
-  overflow-scrolling: touch;
 }
 
 .modal__dialog--visible {
@@ -2340,12 +2341,6 @@ template {
   }
   .modal__input {
     min-width: 230px;
-  }
-}
-
-@media (max-height: 450px) {
-  .modal__dialog {
-    height: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */

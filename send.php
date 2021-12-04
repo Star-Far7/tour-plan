@@ -12,12 +12,12 @@ $email = $_POST['email'];
 
 // Формирование самого письма
 $title = "ЗАГЛАВНЫЙ ЗАГОЛОВОК";
-$body = "
-<h2>Письменное письмо</h2>
-<b>Имя:</b> $name<br>
-<b>Номер:</b> $phone<br>
-<b>Email:</b> $email<br><br>
-<b>Сообщение:</b><br>$message";
+        $body = "
+        <h2>Письменное письмо</h2>
+        <b>Имя:</b> $name<br>
+        <b>Номер:</b> $phone<br>
+        <b>Email:</b> $email<br><br>
+        <b>Сообщение:</b><br>$message";
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
