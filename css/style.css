@@ -48,6 +48,20 @@ img {
   cursor: pointer;
 }
 
+.button__thankyou {
+  margin-top: 15px;
+}
+
+.button .back-thankyou {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1619,6 +1633,8 @@ template {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  overflow-y: auto;
+  overflow-scrolling: touch;
 }
 
 .modal__dialog--visible {
@@ -2185,6 +2201,9 @@ template {
         -ms-flex-align: start;
             align-items: start;
   }
+  .modal__input {
+    min-width: 300px;
+  }
   .modal__button {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -2274,9 +2293,6 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .modal__input {
-    min-width: 200px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -2320,7 +2336,13 @@ template {
     margin-top: 15px;
   }
   .modal__input {
-    width: 200px;
+    min-width: 230px;
+  }
+}
+
+@media (max-height: 450px) {
+  .modal__dialog {
+    height: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */

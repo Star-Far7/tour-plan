@@ -114,12 +114,15 @@
           <!-- Левый блок с информацией -->
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
-              <h1 class="hotel-name hotel-info__name">Письмо отправилно</h1>
+              <h1 class="hotel-name hotel-info__name">Email sent</h1>
             </div>
             <p class="hotel-description hotel-info__description">
-              Спасибо за отправленное письмо, наш менеджер свяжется с вами...
-              или нет, его никто не видел.
+              Thank you for sending your letter, our manager will contact you
+              ... or not, no one saw him.
             </p>
+            <button class="button button__thankyou">
+              <a href="index.html" class="back-thankyou">back to main</a>
+            </button>
           </div>
           <!-- /.hotel-info__text -->
         </div>
@@ -291,7 +294,7 @@
           <!-- /.foote__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="post" class="footer__form">
+            <form action="send.php" method="post" class="form">
               <input
                 type="text"
                 class="input footer__input"
@@ -305,7 +308,7 @@
                 name="phone"
               />
               <textarea
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
