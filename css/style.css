@@ -49,17 +49,20 @@ img {
 }
 
 .button__thankyou {
+  display: inline-block;
   margin-top: 15px;
-}
-
-.button .back-thankyou {
+  padding: 18px;
   text-transform: uppercase;
   text-decoration: none;
-  color: inherit;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .form {
