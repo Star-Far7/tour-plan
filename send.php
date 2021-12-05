@@ -11,13 +11,32 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-$title = "ЗАГЛАВНЫЙ ЗАГОЛОВОК";
+// в зависимости от пришедшей формы формируем сообщение:
+if(isset($_POST['email'])){
+    if(isset($_POST['name'])){
+        $title = "ЗАГЛАВНЫЙ ЗАГОЛОВОК";
         $body = "
         <h2>Письменное письмо</h2>
         <b>Имя:</b> $name<br>
         <b>Номер:</b> $phone<br>
         <b>Email:</b> $email<br><br>
         <b>Сообщение:</b><br>$message";
+    } else {
+        $title = "ЗАГЛАВНЫЙ ЗАГОЛОВОК";
+        $body = "
+        <h2>Письменное письмо</h2>
+        <b>Email:</b> $email<br><br>";      
+    }
+
+} else {
+    // если нет, отправлена форма с телефоном и пр.
+    $title = "ЗАГЛАВНЫЙ ЗАГОЛОВОК";
+    $body = "
+    <h2>Письменное письмо</h2>
+    <b>Имя:</b> $name<br>
+    <b>Номер:</b> $phone<br><br>
+    <b>Сообщение:</b><br>$message";
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
