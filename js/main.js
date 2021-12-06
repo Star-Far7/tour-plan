@@ -75,4 +75,34 @@ $(document).ready(function () {
       modalDialog.removeClass("modal__dialog--visible");
     }
   });
+
+  // Обработка формы
+  $(".form-validate").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      rules: {
+        name: {
+          required: true,
+          minlength: 2,
+        },
+        email: {
+          required: true,
+          email: true,
+        },
+      },
+
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Имя должно бять не короче 2 символов",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: "Please specify your phone",
+      },
+    });
+  });
+  $(".phone").mask("+7 (999) 999-99-99");
 });
