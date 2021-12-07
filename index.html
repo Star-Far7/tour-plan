@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -19,7 +20,7 @@
         <!-- Верхнее меню навигации -->
         <div class="navbar-top">
           <!-- Логотип -->
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="fade-down-right">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -546,7 +547,7 @@
     <!-- Секция с подпиской -->
     <section class="newslatter">
       <div class="newslatter-wrapper">
-        <h1 class="newslatter-title newslatter__title">
+        <h1 class="newslatter-title newslatter__title" data-aos="fade-up">
           subscribe to our
           <span class="newslatter-title__strong">Newsletter</span>
         </h1>
@@ -555,6 +556,7 @@
           action="send.php"
           method="post"
           class="subscribe newslatter__subscribe form-validate"
+          data-aos="fade-up"
         >
           <input
             type="email"
@@ -576,7 +578,7 @@
         <h2 class="reviews__title">What people think about&nbsp;us</h2>
 
         <!-- Слайдер -->
-        <div class="swiper reviews-slider">
+        <div class="swiper reviews-slider" data-aos="flip-right">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <!-- Слайд -->
@@ -840,7 +842,7 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__social-network">
+          <div class="footer__social-network" data-aos="fade-left">
             <h3 class="footer__title footer__title--inline">
               Social&nbsp;Network
             </h3>
@@ -1044,6 +1046,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
