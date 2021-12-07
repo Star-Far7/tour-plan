@@ -89,20 +89,23 @@ $(document).ready(function () {
           required: true,
           email: true,
         },
+        phone: {
+          minlength: 16,
+        },
       },
 
       messages: {
         name: {
           required: "Please specify your name",
-          minlength: "Имя должно бять не короче 2 символов",
+          minlength: "The name is at least 2 letters.",
         },
         email: {
-          required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com",
+          required: "Enter your email address ",
+          email: "name@domain.com. ",
         },
         phone: "Please specify your phone",
       },
     });
   });
-  $(".phone").mask("+7 (999) 999-99-99");
+  $(".phone").mask("+7(999)999-99-99");
 });
