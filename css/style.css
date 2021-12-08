@@ -702,6 +702,13 @@ template {
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stars__star:not(:last-child) {
+  margin-right: 2px;
 }
 
 .offer {
@@ -1051,8 +1058,11 @@ template {
 }
 
 .other-packet__offer {
-  padding: 8px 12px;
+  padding: 8px 23px 7px 11px;
+  font-style: normal;
+  font-weight: 600;
   font-size: 12px;
+  line-height: 15px;
 }
 
 .other-packet__info {
@@ -1069,6 +1079,10 @@ template {
           justify-content: space-between;
 }
 
+.other-packet__title {
+  margin-top: 5px;
+}
+
 .other-packet__rating {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1076,6 +1090,10 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.other-packet__star {
+  margin-right: 2px;
 }
 
 .other-packet__description {
@@ -1086,6 +1104,10 @@ template {
   font-size: 14px;
   line-height: 160.6%;
   color: #ffffff;
+}
+
+.other-packet__order {
+  margin-top: 10px;
 }
 
 .newslatter {
@@ -1244,7 +1266,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
+  top: 41%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -1259,12 +1281,12 @@ template {
 }
 
 .reviews-slider__button--prev {
-  left: 0;
+  left: 18px;
   background-image: url(../img/arrow-prev-secondary.svg);
 }
 
 .reviews-slider__button--next {
-  right: 0;
+  right: 18px;
   background-image: url(../img/arrow-next-secondary.svg);
 }
 
@@ -1330,6 +1352,7 @@ template {
 }
 
 .activities__title {
+  margin-top: 0;
   margin-bottom: 57px;
   font-weight: bold;
   font-size: 24px;
@@ -1521,6 +1544,10 @@ template {
   margin-bottom: 30px;
 }
 
+.footer__title--mt-1 {
+  margin-top: 10px;
+}
+
 .footer__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1556,6 +1583,10 @@ template {
   -webkit-transform: translateY(10%);
           transform: translateY(10%);
   min-width: 40px;
+}
+
+.footer__form {
+  max-width: 540px;
 }
 
 .footer__input {
@@ -1812,7 +1843,11 @@ template {
   .newslatter-wrapper {
     max-width: 700px;
   }
+  .reviews {
+    padding-bottom: 60px;
+  }
   .reviews__title {
+    margin-bottom: 50px;
     font-size: 30px;
     line-height: 38px;
   }
@@ -1820,8 +1855,17 @@ template {
     max-width: 580px;
     padding: 0 62px 30px;
   }
+  .reviews-slider__button {
+    top: 43%;
+  }
+  .reviews-slider__button--next {
+    right: 0;
+  }
+  .reviews-slider__button--prev {
+    left: 0;
+  }
   .activities {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
@@ -1841,13 +1885,14 @@ template {
     -ms-grid-columns: (minmax(min-content, 1fr))[5];
         grid-template-columns: repeat(5, minmax(-webkit-min-content, 1fr));
         grid-template-columns: repeat(5, minmax(min-content, 1fr));
-    grid-gap: 40px;
+    grid-gap: 45 px;
     margin-bottom: 56px;
   }
   .footer__logo {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
+    width: 100px;
   }
   .footer__social-network {
     -ms-grid-row: 1;
@@ -1895,7 +1940,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 86%;
@@ -2020,6 +2065,9 @@ template {
     -ms-flex-preferred-size: content;
         flex-basis: content;
   }
+  .hotel {
+    padding-bottom: 60px;
+  }
   .hotel-slider {
     height: 350px;
   }
@@ -2073,8 +2121,11 @@ template {
     z-index: -2;
   }
   .packet__offer {
-    padding: 8px 12px;
+    padding: 8px 23px 7px 11px;
+    font-style: normal;
+    font-weight: 600;
     font-size: 12px;
+    line-height: 15px;
   }
   .packet__info {
     display: -webkit-box;
@@ -2270,9 +2321,15 @@ template {
   .logo {
     max-width: 99px;
   }
+  .hotel {
+    padding-bottom: 40px;
+  }
   .hotel__slider {
     margin-bottom: 20px;
     height: 270px;
+  }
+  .packages-wrapper {
+    margin-top: 40px;
   }
   .packages__title {
     font-size: 18px;
@@ -2356,8 +2413,11 @@ template {
   .navbar__search {
     width: 243px;
   }
+  .hotel-grid {
+    padding-top: 18px;
+  }
   .hotel-slider {
-    height: 200px;
+    height: 176px;
   }
   .hotel-slider__button {
     width: 12px;

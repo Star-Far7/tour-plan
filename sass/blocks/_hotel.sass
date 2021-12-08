@@ -80,6 +80,9 @@
         background-image: url(../img/arrow-prev.svg)
 .stars
   flex-basis: 100%
+  display: flex
+  &__star:not(:last-child)
+    margin-right: 2px
 .offer
   font-weight: 600
   font-size: 10px

@@ -87,21 +87,28 @@
 
   // Секция с отзывами
   .reviews
+    padding-bottom: 60px
     &__title
+      margin-bottom: 50px
       font-size: 30px
       line-height: 38px
     &-slider
       &__item
         max-width: 580px
         padding: 0 62px 30px
+      &__button
+        top: 43%
+        &--next
+          right: 0
+        &--prev
+          left: 0
 
   .activities
-    padding-bottom: 70px
+    padding-bottom: 50px
     &-wrapper
       flex-wrap: wrap
     &__card
       margin-bottom: 20px
-
   .card
     width: 340px
     height: 255px
@@ -110,10 +117,11 @@
     padding-top: 73px
     &-wrapper
       grid-template-columns: repeat(5, minmax(min-content, 1fr))
-      grid-gap: 40px
+      grid-gap: 45 px
       margin-bottom: 56px
     &__logo
       grid-row: 1 / 2
+      width: 100px
     &__social
       &-network
         grid-row: 1 / 2
@@ -144,7 +152,7 @@
       padding: 33px 56px
 
 // Адаптив до 768px
-@media (max-width:768px)
+@media (max-width:767px)
   .container
     max-width: 576px
     width: 86%
@@ -244,6 +252,7 @@
 
   // Блок слайдера и блок бронирования и гео карты
   .hotel
+    padding-bottom: 60px
     // Слайдер
     &-slider
       height: 350px
@@ -287,8 +296,11 @@
       object-fit: cover
       z-index: -2
     &__offer
-      padding: 8px 12px
+      padding: 8px 23px 7px 11px
+      font-style: normal
+      font-weight: 600
       font-size: 12px
+      line-height: 15px
     &__info
       display: flex
       flex-direction: column
@@ -419,12 +431,15 @@
 
   // Слайдер
   .hotel
+    padding-bottom: 40px
     &__slider
       margin-bottom: 20px
       height: 270px
 
   // Секция с пакетами
   .packages
+    &-wrapper
+      margin-top: 40px
     &__title
       font-size: 18px
       line-height: 23px
@@ -484,8 +499,10 @@
     &__search
       width: 243px
   .hotel
+    &-grid
+      padding-top: 18px
     &-slider
-      height: 200px
+      height: 176px
       &__button
         width: 12px
         height: 12px
