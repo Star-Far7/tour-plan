@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="font"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
@@ -738,7 +740,7 @@
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
 
-          <div class="card activities__card">
+          <div class="card activities__card activities__card--order-2">
             <img
               src="img/activities-2.jpg"
               alt="Gymkhana club gol fcourse"
@@ -748,19 +750,19 @@
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
 
-          <div class="card activities__card">
+          <div class="card activities__card activities__card--order-1">
             <img
               src="img/activities-3.jpg"
               alt="Tamarind falls hiking trip - full day"
               class="card__image"
             />
             <h3 class="card__title">
-              Tamarind falls hiking trip &#8209; full day
+              Tamarind falls hiking trip&nbsp;&#8209;&nbsp;full day
             </h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
 
-          <div class="card activities__card">
+          <div class="card activities__card activities__card--order-3">
             <img
               src="img/activities-4.jpg"
               alt="The blue marine discovery quest"
@@ -903,18 +905,18 @@
                 </div>
                 <ul class="footer__ul footer__ul--tel">
                   <li class="footer__item">
-                    <a href="tel=2691500" class="footer__link"
+                    <a href="tel:2691500" class="footer__link"
                       >Tel (business hours): 269&nbsp;1500</a
                     >
                   </li>
                   <li class="footer__item">
-                    <a href="tel=52-56-61-38" class="footer__link"
+                    <a href="tel:52-56-61-38" class="footer__link"
                       >Tel (hotline) Monday - Saturday:
                       52&#8209;56&#8209;61&#8209;38 (08:00 am – 20:00 pm)</a
                     >
                   </li>
                   <li class="footer__item">
-                    <a href="tel=52-56-61-38 " class="footer__link"
+                    <a href="tel:52-56-61-38 " class="footer__link"
                       >Tel (hotline) Sunday: 52&#8209;56&#8209;61&#8209;38
                       (08:00 am – 14:00 pm)</a
                     >
@@ -930,7 +932,7 @@
                     class="footer__icon"
                   />
                 </div>
-                <a href="mail=cherly.lawson@example.com" class="footer__link"
+                <a href="mailto:cherly.lawson@example.com" class="footer__link"
                   >cherly.lawson@example.com</a
                 >
               </li>
@@ -938,9 +940,7 @@
           </div>
           <!-- /.foote__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-3 footer__title--mt-1">
-              Send us a message
-            </h3>
+            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
             <form
               action="send.php"
               method="post"
@@ -1044,7 +1044,7 @@
     <!-- /.modal -->
 
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>

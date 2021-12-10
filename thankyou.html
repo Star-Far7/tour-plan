@@ -19,7 +19,7 @@
         <!-- Верхнее меню навигации -->
         <div class="navbar-top">
           <!-- Логотип -->
-          <a href="#" class="logo">
+          <a href="/index.html" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -107,6 +107,27 @@
       <!-- /.navbar-battom -->
     </header>
 
+    <!-- Хлебные крожки -->
+    <nav class="breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb-list">
+          <li class="breadcrumb-list__item">
+            <a href="#" class="breadcrumb-list__link">Home</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            <a href="/index.html" class="breadcrumb-list__link"
+              >Grand Hilton Hotel</a
+            >
+          </li>
+          <li class="breadcrumb-list__item">Thanks</li>
+        </ol>
+      </div>
+      <!-- /.container -->
+    </nav>
+
     <section class="hotel">
       <div class="container">
         <!-- Информация об отеле -->
@@ -133,7 +154,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="#" class="footer__logo">
+          <a href="/index.html" class="footer__logo">
             <img
               src="img/vertical-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -257,18 +278,18 @@
                 </div>
                 <ul class="footer__ul footer__ul--tel">
                   <li class="footer__item">
-                    <a href="tel=2691500" class="footer__link"
+                    <a href="tel:2691500" class="footer__link"
                       >Tel (business hours): 269&nbsp;1500</a
                     >
                   </li>
                   <li class="footer__item">
-                    <a href="tel=52-56-61-38" class="footer__link"
+                    <a href="tel:52-56-61-38" class="footer__link"
                       >Tel (hotline) Monday - Saturday:
                       52&#8209;56&#8209;61&#8209;38 (08:00 am – 20:00 pm)</a
                     >
                   </li>
                   <li class="footer__item">
-                    <a href="tel=52-56-61-38 " class="footer__link"
+                    <a href="tel:52-56-61-38 " class="footer__link"
                       >Tel (hotline) Sunday: 52&#8209;56&#8209;61&#8209;38
                       (08:00 am – 14:00 pm)</a
                     >
@@ -284,7 +305,7 @@
                     class="footer__icon"
                   />
                 </div>
-                <a href="mail=cherly.lawson@example.com" class="footer__link"
+                <a href="mailto:cherly.lawson@example.com" class="footer__link"
                   >cherly.lawson@example.com</a
                 >
               </li>
@@ -293,19 +314,36 @@
           <!-- /.foote__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="post" class="form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form
+              action="send.php"
+              method="post"
+              class="form footer__form form-validate"
+            >
+              <div class="footer__input-group-wrapper">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                  />
+                </div>
+                <!-- /.footer__input-group -->
+
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input phone"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                  />
+                </div>
+                <!-- /.footer__input-group -->
+              </div>
+              <!-- /.footer__input-group-wrapper -->
+
               <textarea
                 class="message footer__message"
                 placeholder="Message"

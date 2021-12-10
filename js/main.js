@@ -34,8 +34,8 @@ $(document).ready(function () {
 
   // Эффект паралакса
   $(".newslatter").parallax({
-    imageSrc: "img/newslatter-bg.jpeg",
-    speed: 0.4,
+    speedFactor: 0.2,
+    offsetY: -500,
   });
 
   // Модальная кнопка
