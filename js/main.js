@@ -10,7 +10,6 @@ $(document).ready(function () {
   });
   new Swiper(".reviews-slider", {
     loop: !0,
-    effect: "flip",
     navigation: {
       nextEl: ".reviews-slider__button--next",
       prevEl: ".reviews-slider__button--prev",
