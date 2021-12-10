@@ -1,99 +1,56 @@
 $(document).ready(function () {
-  // Слайдер
-  const hotelSlider = new Swiper(".hotel-slider", {
-    // Optional parameters
-    loop: true,
-
-    // Navigation arrows
+  new Swiper(".hotel-slider", {
+    loop: !0,
     navigation: {
       nextEl: ".hotel-slider__button--next",
       prevEl: ".hotel-slider__button--prev",
     },
-
-    // Эффект перелистывания слайда
     effect: "coverflow",
-
-    // Прелистывания слайдера с помощью стрелок влево и вправо
-    keyboard: {
-      enabled: true,
-      onlyInViewport: false,
-    },
+    keyboard: { enabled: !0, onlyInViewport: !1 },
   });
-
-  // Слайдер
-  const reviewsSlider = new Swiper(".reviews-slider", {
-    // Optional parameters
-    loop: true,
+  new Swiper(".reviews-slider", {
+    loop: !0,
     effect: "flip",
-    // Navigation arrows
     navigation: {
       nextEl: ".reviews-slider__button--next",
       prevEl: ".reviews-slider__button--prev",
     },
   });
-
-  // Эффект паралакса
-  $(".newslatter").parallax({
-    speedFactor: 0.2,
-    offsetY: -500,
+  $(".newslatter").parallax({ imageSrc: "img/newslatter-bg.webp", speed: 0.4 });
+  $(".menu-button").on("click", function () {
+    return $(".navbar-battom").toggleClass("navbar-battom--visible");
   });
-
-  // Модальная кнопка
-  const menuButton = $(".menu-button");
-  // Функция вызова меню
-  menuButton.on("click", () =>
-    $(".navbar-battom").toggleClass("navbar-battom--visible")
-  );
-
-  //Модальная кнопка
-  const modalButton = $('[data-toggle="modal"]');
-  const closeModalButton = $(".modal__close");
-  modalButton.on("click", openModal);
-  closeModalButton.on("click", closeModal);
-
-  // Функция вызова
-  function openModal() {
-    const modalOverlay = $(".modal__overlay");
-    const modalDialog = $(".modal__dialog");
-    modalOverlay.addClass("modal__overlay--visible");
-    modalDialog.addClass("modal__dialog--visible");
-  }
-  // Функция закрытия
-  function closeModal(event) {
-    event.preventDefault();
-    const modalOverlay = $(".modal__overlay");
-    const modalDialog = $(".modal__dialog");
-    modalOverlay.removeClass("modal__overlay--visible");
-    modalDialog.removeClass("modal__dialog--visible");
-  }
-  // Закрытие окна нажатием на Escape
-  $(document).keyup(function (e) {
-    if (e.key === "Escape" || e.keyCode === 27) {
-      const modalOverlay = $(".modal__overlay");
-      const modalDialog = $(".modal__dialog");
-      modalOverlay.removeClass("modal__overlay--visible");
-      modalDialog.removeClass("modal__dialog--visible");
+  var c = $('[data-toggle="modal"]'),
+    d = $(".modal__close");
+  c.on("click", function () {
+    var a = $(".modal__overlay"),
+      b = $(".modal__dialog");
+    a.addClass("modal__overlay--visible");
+    b.addClass("modal__dialog--visible");
+  });
+  d.on("click", function (a) {
+    a.preventDefault();
+    a = $(".modal__overlay");
+    var b = $(".modal__dialog");
+    a.removeClass("modal__overlay--visible");
+    b.removeClass("modal__dialog--visible");
+  });
+  $(document).keyup(function (a) {
+    if ("Escape" === a.key || 27 === a.keyCode) {
+      a = $(".modal__overlay");
+      var b = $(".modal__dialog");
+      a.removeClass("modal__overlay--visible");
+      b.removeClass("modal__dialog--visible");
     }
   });
-
-  // Обработка формы
   $(".form-validate").each(function () {
     $(this).validate({
       errorClass: "invalid",
       rules: {
-        name: {
-          required: true,
-          minlength: 2,
-        },
-        email: {
-          required: true,
-          email: true,
-        },
-        phone: {
-          minlength: 16,
-        },
+        name: { required: !0, minlength: 2 },
+        email: { required: !0, email: !0 },
+        phone: { minlength: 16 },
       },
-
       messages: {
         name: {
           required: "Please specify your name",
